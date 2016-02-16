@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+           <!-- colorPrimary is used for coloring the Toolbar -->
+            <item name="colorPrimary">#ff0000</item>
+            <!-- colorPrimaryDark is used for coloring the status bar -->
+           <item name="colorPrimaryDark">#303F9F</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+ 8          which is used to tint widgets -->
+             <item name="colorAccent">#757575</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

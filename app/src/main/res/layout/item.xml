@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <!--左边收到的信息的布局-->
+    <RelativeLayout
+        android:id="@+id/itemLayout_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/item_left_header_pic"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/p5"/>
+
+        <TextView
+
+            android:text="王大锤"
+            android:id="@+id/item_left_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/itemLayout_inner" />
+        <LinearLayout
+            android:id="@+id/itemLayout_inner"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/item_left_header_pic"
+            android:layout_below="@id/item_left_user_name"
+            android:background="@drawable/p2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_left_chatText"
+                android:gravity="left"
+                android:text="内"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/item_left_chatImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!-- 右边的，发送出去的信息的布局-->
+   <RelativeLayout
+       android:id="@+id/itemLayout_right"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <ImageView
+           android:id="@+id/item_right_header_pic"
+           android:layout_width="38dp"
+           android:layout_height="38dp"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/p5">
+
+       </ImageView>
+       <TextView
+           android:id="@+id/item_myselfText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+           android:background="@drawable/p4"
+           android:text="你好"
+           android:textSize="18sp"
+
+           android:layout_alignParentTop="true"
+           android:layout_toStartOf="@+id/item_right_header_pic"
+           android:layout_marginTop="-6dp"/>
+
+
+
+
+
+   </RelativeLayout>
+</LinearLayout>

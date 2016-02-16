@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p12"
+>
+
+    <TextView
+        android:id="@+id/zanzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="38sp"
+        android:layout_gravity="center"
+        android:textColor="#EE7600"
+        android:text="单身狗保护协会"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="赞助出品"
+        android:layout_above="@+id/imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp" />
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:src="@drawable/p15"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/danshengou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:text="“别再叫自己单身狗了，狗在这个年纪已经死了”"
+        android:layout_below="@+id/imageview"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:background="#E8E8E8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始游戏"
+        android:padding="20dp"
+        android:layout_marginBottom="33dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
